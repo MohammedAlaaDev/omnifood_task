@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    height: 10000px;
+}
+
+nav {
+    background-color: #fdf2e9;
+}
+
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 0 20px;
+}
+
+@media (min-width: 992px) {
+    nav .parent {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+.landing {
+    padding-top: calc(88px + 50px);
+    height: 100vh;
+    background-color: #fdf2e9;
+}
+
+.landing .parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
+}
